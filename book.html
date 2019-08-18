@@ -155,12 +155,12 @@
             <!-- </div> -->
             <!-- </div> -->
             <!-- </div> -->
-            <!-- </section> -->
-            <a id="manual" class="in-page-link"></a>
-            <section class="switchable feature-large feature-large-13">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="img/service-manual.jpg"> </div>
+            <!-- </section><!--  --> -->
+            <!-- <a id="manual" class="in-page-link"></a> -->
+            <!-- <section class="switchable feature-large feature-large-13"> -->
+            <!-- <div class="container"> -->
+            <!-- <div class="row justify-content-between"> -->
+            <!-- <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="img/service-manual.jpg"> </div> -->
                         <div class="col-md-6 col-lg-5">
                             <div class="switchable__text">
                                 <h2>We created the Throttle-Up Learning Bundle</h2>
@@ -236,12 +236,20 @@
                                 <h1>Pre-Order the Bundle</h1>
                                 <p class="lead">We will share chapters as they're ready.<br><br>Full bundle will be available on Jan 2020.</p>
                                 <hr class="short">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12"> <button type="submit" class="btn btn--primary">Buy Now</button> </div>
-                                        <div class="col-12"> <span class="type--fine-print">By signing up, you agree to the <a href="#learning-bundle">Terms of Service</a></span> </div>
-                                    </div>
-                                </form>
+				<button
+				    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+				    id="checkout-button-sku_FdwgzF9im6K0hR"
+				    role="link"
+				>
+				  Checkout
+				</button>
+				<!-- <div id="error-message"></div><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --> -->
+
+                                <!-- <form> -->
+                                <!-- <div class="row"> -->
+                                <!-- <div class="col-12"> <button type="submit" class="btn btn--primary">Buy Now</button> </div> -->
+                                <!-- </div> -->
+                                <!-- </form> -->
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-5"> <img alt="Image" class="border--round box-shadow-wide" src="img/photography-1.jpg"> </div>
@@ -251,16 +259,49 @@
             <section class="page-navigator">
                 <ul>
                     <li>
-                        <a href="#title" class="inner-link" data-title="Section 1" target="_self"> </a>
+                      <a href="#title" class="inner-link" data-title="Section 1" target="_self"> </a>
                     </li>
                 </ul>
             </section>
+	    
         </div>
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
+	<!-- Load Stripe.js on your website. -->
+	<script src="https://js.stripe.com/v3"></script>
 
+	<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+
+	<script>
+	 var stripe = Stripe('pk_live_DW8Hi23RsNIj8JJORA7HTjFl');
+
+	 var checkoutButton = document.getElementById('checkout-button-sku_FdwgzF9im6K0hR');
+	 checkoutButton.addEventListener('click', function () {
+	     // When the customer clicks on the button, redirect
+	     // them to Checkout.
+	     stripe.redirectToCheckout({
+		 items: [{sku: 'sku_FdwgzF9im6K0hR', quantity: 1}],
+
+		 // Do not rely on the redirect to the successUrl for fulfilling
+		 // purchases, customers may not always reach the success_url after
+		 // a successful payment.
+		     // Instead use one of the strategies described in
+		 // https://stripe.com/docs/payments/checkout/fulfillment
+		 successUrl: window.location.protocol + '//topos.house/success',
+		 cancelUrl: window.location.protocol + '//topos.house/canceled',
+	     })
+		   .then(function (result) {
+		       if (result.error) {
+			   // If `redirectToCheckout` fails due to a browser or network
+			   // error, display the localized error message to your customer.
+			       var displayError = document.getElementById('error-message');
+			   displayError.textContent = result.error.message;
+		       }
+		   });
+	 });
+	</script>
     </body>
 
 </html>
