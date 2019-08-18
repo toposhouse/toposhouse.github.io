@@ -10,230 +10,232 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+	<script src="https://js.stripe.com/v3"></script>
 
+	<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
     </head>
     <body data-smooth-scroll-offset="77">
-        <div class="nav-container"> </div>
-        <div class="main-container">
-            <a id="title" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-11">
-                            <div class="cta">
-                                <h2><b>Throttle-Up Learning Bundle</b></h2>
-                                <p class="lead"><span><span><i><b>Throttle-Up: </b>To Significantly Increase the Fuel (knowledge) to an Engine (you)</i></span></span>
-                                </p>
-                            </div>
-                        </div>
+      <div class="nav-container"> </div>
+      <div class="main-container">
+        <a id="title" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-11">
+                <div class="cta">
+                  <h2><b>Throttle-Up Learning Bundle</b></h2>
+                  <p class="lead"><span><span><i><b>Throttle-Up: </b>To Significantly Increase the Fuel (knowledge) to an Engine (you)</i></span></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="are-you" class="in-page-link"></a>
+        <section class="switchable feature-large unpad--bottom">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-md-6">
+                <div class="switchable__text">
+                  <h2><b>Are You?</b></h2>
+                  <p class="lead">Interested in how to learn at the fastest possible pace?<br><br>Have found that problem extremely difficult to measure &amp; optimize<br><br>But, believe that it’s super important for realizing your potential...</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 col-12 text-center"> <img alt="Image" src="img/fast-learning.png"> </div>
+            </div>
+          </div>
+        </section>
+        <a id="problem" class="in-page-link"></a>
+        <section class="switchable">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-md-7"> <img alt="Image" src="img/compounding.png"> </div>
+              <div class="col-md-5 col-lg-4">
+                <div class="switchable__text">
+                  <h3><b>Problem</b></h3>
+                  <p class="lead"> Learning is perhaps the most important investment we can make... <br><br>It compounds over the course of our entire life... <br><br>But we basically stop learning after we leave college. Why? <br><br>It's unclear where and how to do so...<br><br>And, the expected return - economic or otherwise - is totally opaque! </p>
+                  <hr class="short"> </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="feelings" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h2>What We're Doing About That...</h2>
+                <p class="lead">We felt incredibly frustrated by this state of affairs... <br><br>So we created a four month intensive residency that brings together brilliant people from neuroscience, machine learning, learning sciences, and psychology to address it... <br><br>But, we didn’t want to hoard our improvements so we thought we would share our results... </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="learning-bundle" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h1>The Throttle Up Learning Bundle</h1>
+                <p class="lead"> A step-by-step practical manual,<br>featuring the latest + novel research,<br>with detailed execution plans,<br>for every learning budget,<br>optimized to maximize accelerate learning,<br> for only the most serious knowledge workers.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="knowledge-worker" class="in-page-link"></a>
+        <section class="switchable feature-large">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="https://media.giphy.com/media/yPRo73ILrGjny/giphy.gif"> </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="switchable__text">
+                  <h2><b>What is knowledge work?</b></h2>
+                  <p class="lead"> The first thought of knowledge work is that it involves typing...<br><br>But the right definition of a knowledge worker probably closer to: "someone for whom a unit of knowledge can be leveraged for increased economic output."&nbsp;<br><br>For example, the manager of a warehouse can read an essay on message passing and create a more efficient warehouse...<br><br>But, a notary cannot necessarily do their job more efficiently by virtue of greater knowledge. <br><br>Since learning is the acquisition of knowledge, learning is essential to gaining leverage in knowledge work. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="why-focus-on-games" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h1>We Focus on Learning to Play Games. <br><br>Why?</h1>
+                <p class="lead">We're focused on learning acceleration on games for two reasons. <br><br>1. They present an interesting opportunity to map what the game AI perceives of the human cognitive progress to simultaneous neurological sensing.<br><br>We can thereby learning how large improvements in perceived ability were preceded by various neurological signals. <br><br>2. Since many human activities can be recast as games, we believe that if we can learn how humans can learn games best we can generalize to other areas.<br></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="latin-case-study" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h2>We choose Practical over Theoretical</h2>
+                <p class="lead">For example, many have read that tutoring generates a two sigma increase to learning outcomes.<br><br>But, how can you <i>actually </i>leverage that result for your learning?<br></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="latin-case-study2" class="in-page-link"></a>
+        <section class="feature-large feature-large-2">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-md-4 col-lg-3">
+                <h3>Latin Tutoring <br>Case Study</h3>
+                <p class="lead">One of our residents learned Latin from a standing start to reading Dante's Inferno fluently in two months.<br><br>Most of her success was due to tutoring.&nbsp;<br><br>But the essence is the details.&nbsp;<br><br><i>How many tutors?</i> Two.<br><br><i>Where found?</i> Wyzant.<br><br><i>What role for each? </i>Exercises &amp; Theory.<br><br>Evaluation criteria? Cost? Frequency? etc...&nbsp;<br><br>We aim to answer ALL the practical questions whatever the learning approach.</p>
+              </div>
+              <div class="col-md-4 col-lg-4"> <img alt="Image" class="border--round box-shadow-wide" src="https://miro.medium.com/max/1028/1*oIgw27peLLPqOgOso5ub7w.jpeg"> </div>
+              <div class="col-md-4 col-lg-2">
+                <hr class="short">
+                <p>For every area of learning acceleration (neurological sensing + stimulation, tutors, spaced repetition tools, cognitive media, peer group etc...), we will extremely detailed and practical around cost, sourcing, planning, time requirements etc... so that you can easily convert the result of our work into your personal results.&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="devices" class="in-page-link"></a>
+        <section class="switchable feature-large feature-large-13">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="https://psychscenehub.com/wp-content/uploads/2018/01/TMS.jpg"> </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="switchable__text">
+                  <h2>We favor Scientific over Procedural</h2>
+                  <p class="lead">We will deploy the latest in neurological sensing and stimulation devices.<br><br>We will take a skeptical approach to measuring their direct effectiveness in certain learning situations.<br><br>We will prioritize equipment that is commercially available so if it's good you can easily access it.<br></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="benefit-summary" class="in-page-link"></a>
+        <!-- <section class="text-center"> -->
+        <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-md-10 col-lg-8"> -->
+        <!-- <h1>How We Hope You Benefit</h1> -->
+        <!-- <p class="lead"> Stack's visual style is simple yet distinct, making it an ideal starting point for your project whether it be a basic marketing site, or multi-page company presence. </p> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </section><!--  --> -->
+        <!-- <a id="manual" class="in-page-link"></a> -->
+        <!-- <section class="switchable feature-large feature-large-13"> -->
+        <!-- <div class="container"> -->
+        <!-- <div class="row justify-content-between"> -->
+        <!-- <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="img/service-manual.jpg"> </div> -->
+        <div class="col-md-6 col-lg-5">
+          <div class="switchable__text">
+            <h2>We created the Throttle-Up Learning Bundle</h2>
+            <p class="lead">Tests the latest research in practical settings. <br></p>
+            <p class="lead">Shares our novel research into the effectiveness of modern neurological sensing. <br></p>
+            <p class="lead">Includes evaluations of all the tools, devices and services known to accelerate learning. <br></p>
+            <p class="lead">Includes detailed execution plans for every learning budget from $10 to $1M+. <br></p>
+            <p class="lead">Full refunds if the information and plans don't generate the returns you seek.<br></p>
+            <p class="lead">All proceeds will go to writing and conducting research.<br></p>
+          </div>
+        </div>
+      </div>
+      </div>
+        </section>
+        <a id="cost" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h2>What does the bundle cost?&nbsp;<br><br>$250. <br><br>WHY?</h2>
+                <p class="lead"><i>We wanted to set a cost that has a purchasing threshold of actually being practically useful versus just interesting.</i><br><br>People spend many thousands of dollars on The Economist's Intelligence Unit, on market research reports or other manuals that help them do their jobs better. <br><br>On the flip side, people only spend 10$ on interesting books with unclear utility. <br><br>So, we wanted to make sure that our learning improvements <i>actually improve</i> people's learning capabilities to such an extent that they can feel a measurable increase in their potential - economic or otherwise. <br><br>If it&nbsp;doesn’t sell, we’ll know we haven’t achieved our goal.<br><br>So, we priced it at $250.<br></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="disclaimer" class="in-page-link"></a>
+        <section class="imageblock switchable feature-large">
+          <div class="imageblock__content col-lg-4 col-md-3 pos-right">
+            <div class="background-image-holder"> <img alt="image" src="https://i.pinimg.com/originals/00/04/8f/00048f67ff1e2a0249611e26a9034ff4.jpg"> </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-8">
+                <h2><b>Disclaimer</b></h2>
+                <p class="lead">Accelerating learning is really hard and <i>particularly&nbsp;</i>hard to measure.&nbsp;<br><br>We may very well fail because:</p>
+                <div class="feature-large__group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="feature feature-6"> <i class="icon color--primary icon-Clock-4 icon--sm"></i>
+                        <h5>4 Months is Not a Long Time</h5>
+                        <p> We may not complete excellent research within our allotted time.&nbsp;</p>
+                      </div>
                     </div>
-                </div>
-            </section>
-            <a id="are-you" class="in-page-link"></a>
-            <section class="switchable feature-large unpad--bottom">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-md-6">
-                            <div class="switchable__text">
-                                <h2><b>Are You?</b></h2>
-                                <p class="lead">Interested in how to learn at the fastest possible pace?<br><br>Have found that problem extremely difficult to measure &amp; optimize<br><br>But, believe that it’s super important for realizing your potential...</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-12 text-center"> <img alt="Image" src="img/fast-learning.png"> </div>
+                    <div class="col-md-6">
+                      <div class="feature feature-6"> <i class="icon color--primary icon-Line-Chart3 icon--sm"></i>
+                        <h5>Absence of Measurable Results</h5>
+                        <p>Learning represents an aggregate change in the state of a huge number of neurons so it's often quite hard to measure...</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <a id="problem" class="in-page-link"></a>
-            <section class="switchable">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-md-7"> <img alt="Image" src="img/compounding.png"> </div>
-                        <div class="col-md-5 col-lg-4">
-                            <div class="switchable__text">
-                                <h3><b>Problem</b></h3>
-                                <p class="lead"> Learning is perhaps the most important investment we can make... <br><br>It compounds over the course of our entire life... <br><br>But we basically stop learning after we leave college. Why? <br><br>It's unclear where and how to do so...<br><br>And, the expected return - economic or otherwise - is totally opaque! </p>
-                                <hr class="short"> </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="feelings" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h2>What We're Doing About That...</h2>
-                            <p class="lead">We felt incredibly frustrated by this state of affairs... <br><br>So we created a four month intensive residency that brings together brilliant people from neuroscience, machine learning, learning sciences, and psychology to address it... <br><br>But, we didn’t want to hoard our improvements so we thought we would share our results... </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="learning-bundle" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h1>The Throttle Up Learning Bundle</h1>
-                            <p class="lead"> A step-by-step practical manual,<br>featuring the latest + novel research,<br>with detailed execution plans,<br>for every learning budget,<br>optimized to maximize accelerate learning,<br> for only the most serious knowledge workers.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="knowledge-worker" class="in-page-link"></a>
-            <section class="switchable feature-large">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="https://media.giphy.com/media/yPRo73ILrGjny/giphy.gif"> </div>
-                        <div class="col-md-6 col-lg-5">
-                            <div class="switchable__text">
-                                <h2><b>What is knowledge work?</b></h2>
-                                <p class="lead"> The first thought of knowledge work is that it involves typing...<br><br>But the right definition of a knowledge worker probably closer to: "someone for whom a unit of knowledge can be leveraged for increased economic output."&nbsp;<br><br>For example, the manager of a warehouse can read an essay on message passing and create a more efficient warehouse...<br><br>But, a notary cannot necessarily do their job more efficiently by virtue of greater knowledge. <br><br>Since learning is the acquisition of knowledge, learning is essential to gaining leverage in knowledge work. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="why-focus-on-games" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h1>We Focus on Learning to Play Games. <br><br>Why?</h1>
-                            <p class="lead">We're focused on learning acceleration on games for two reasons. <br><br>1. They present an interesting opportunity to map what the game AI perceives of the human cognitive progress to simultaneous neurological sensing.<br><br>We can thereby learning how large improvements in perceived ability were preceded by various neurological signals. <br><br>2. Since many human activities can be recast as games, we believe that if we can learn how humans can learn games best we can generalize to other areas.<br></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="latin-case-study" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h2>We choose Practical over Theoretical</h2>
-                            <p class="lead">For example, many have read that tutoring generates a two sigma increase to learning outcomes.<br><br>But, how can you <i>actually </i>leverage that result for your learning?<br></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="latin-case-study2" class="in-page-link"></a>
-            <section class="feature-large feature-large-2">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-4 col-lg-3">
-                            <h3>Latin Tutoring <br>Case Study</h3>
-                            <p class="lead">One of our residents learned Latin from a standing start to reading Dante's Inferno fluently in two months.<br><br>Most of her success was due to tutoring.&nbsp;<br><br>But the essence is the details.&nbsp;<br><br><i>How many tutors?</i> Two.<br><br><i>Where found?</i> Wyzant.<br><br><i>What role for each? </i>Exercises &amp; Theory.<br><br>Evaluation criteria? Cost? Frequency? etc...&nbsp;<br><br>We aim to answer ALL the practical questions whatever the learning approach.</p>
-                        </div>
-                        <div class="col-md-4 col-lg-4"> <img alt="Image" class="border--round box-shadow-wide" src="https://miro.medium.com/max/1028/1*oIgw27peLLPqOgOso5ub7w.jpeg"> </div>
-                        <div class="col-md-4 col-lg-2">
-                            <hr class="short">
-                            <p>For every area of learning acceleration (neurological sensing + stimulation, tutors, spaced repetition tools, cognitive media, peer group etc...), we will extremely detailed and practical around cost, sourcing, planning, time requirements etc... so that you can easily convert the result of our work into your personal results.&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="devices" class="in-page-link"></a>
-            <section class="switchable feature-large feature-large-13">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="https://psychscenehub.com/wp-content/uploads/2018/01/TMS.jpg"> </div>
-                        <div class="col-md-6 col-lg-5">
-                            <div class="switchable__text">
-                                <h2>We favor Scientific over Procedural</h2>
-                                <p class="lead">We will deploy the latest in neurological sensing and stimulation devices.<br><br>We will take a skeptical approach to measuring their direct effectiveness in certain learning situations.<br><br>We will prioritize equipment that is commercially available so if it's good you can easily access it.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="benefit-summary" class="in-page-link"></a>
-            <!-- <section class="text-center"> -->
-            <!-- <div class="container"> -->
-            <!-- <div class="row"> -->
-            <!-- <div class="col-md-10 col-lg-8"> -->
-            <!-- <h1>How We Hope You Benefit</h1> -->
-            <!-- <p class="lead"> Stack's visual style is simple yet distinct, making it an ideal starting point for your project whether it be a basic marketing site, or multi-page company presence. </p> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </section><!--  --> -->
-            <!-- <a id="manual" class="in-page-link"></a> -->
-            <!-- <section class="switchable feature-large feature-large-13"> -->
-            <!-- <div class="container"> -->
-            <!-- <div class="row justify-content-between"> -->
-            <!-- <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="img/service-manual.jpg"> </div> -->
-                        <div class="col-md-6 col-lg-5">
-                            <div class="switchable__text">
-                                <h2>We created the Throttle-Up Learning Bundle</h2>
-                                <p class="lead">Tests the latest research in practical settings. <br></p>
-                                <p class="lead">Shares our novel research into the effectiveness of modern neurological sensing. <br></p>
-                                <p class="lead">Includes evaluations of all the tools, devices and services known to accelerate learning. <br></p>
-                                <p class="lead">Includes detailed execution plans for every learning budget from $10 to $1M+. <br></p>
-                                <p class="lead">Full refunds if the information and plans don't generate the returns you seek.<br></p>
-                                <p class="lead">All proceeds will go to writing and conducting research.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="cost" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h2>What does the bundle cost?&nbsp;<br><br>$250. <br><br>WHY?</h2>
-                            <p class="lead"><i>We wanted to set a cost that has a purchasing threshold of actually being practically useful versus just interesting.</i><br><br>People spend many thousands of dollars on The Economist's Intelligence Unit, on market research reports or other manuals that help them do their jobs better. <br><br>On the flip side, people only spend 10$ on interesting books with unclear utility. <br><br>So, we wanted to make sure that our learning improvements <i>actually improve</i> people's learning capabilities to such an extent that they can feel a measurable increase in their potential - economic or otherwise. <br><br>If it&nbsp;doesn’t sell, we’ll know we haven’t achieved our goal.<br><br>So, we priced it at $250.<br></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="disclaimer" class="in-page-link"></a>
-            <section class="imageblock switchable feature-large">
-                <div class="imageblock__content col-lg-4 col-md-3 pos-right">
-                    <div class="background-image-holder"> <img alt="image" src="https://i.pinimg.com/originals/00/04/8f/00048f67ff1e2a0249611e26a9034ff4.jpg"> </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-8">
-                            <h2><b>Disclaimer</b></h2>
-                            <p class="lead">Accelerating learning is really hard and <i>particularly&nbsp;</i>hard to measure.&nbsp;<br><br>We may very well fail because:</p>
-                            <div class="feature-large__group">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="feature feature-6"> <i class="icon color--primary icon-Clock-4 icon--sm"></i>
-                                            <h5>4 Months is Not a Long Time</h5>
-                                            <p> We may not complete excellent research within our allotted time.&nbsp;</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="feature feature-6"> <i class="icon color--primary icon-Line-Chart3 icon--sm"></i>
-                                            <h5>Absence of Measurable Results</h5>
-                                            <p>Learning represents an aggregate change in the state of a huge number of neurons so it's often quite hard to measure...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="refunds" class="in-page-link"></a>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8">
-                            <h2><b>So...&nbsp;Refunds will be always be available</b></h2>
-                            <p class="lead">We understand this research &amp; mechanism of funding is speculative and may fail.&nbsp;<br><br>We personally guarantee the program and will fund it in the event our bundle doesn't deliver sufficient value.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="stripe-payment" class="in-page-link"></a>
-            <section class="switchable">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6 col-lg-5">
-                            <div class="mt--3">
-                                <h1>Pre-Order the Bundle</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="refunds" class="in-page-link"></a>
+        <section class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8">
+                <h2><b>So...&nbsp;Refunds will be always be available</b></h2>
+                <p class="lead">We understand this research &amp; mechanism of funding is speculative and may fail.&nbsp;<br><br>We personally guarantee the program and will fund it in the event our bundle doesn't deliver sufficient value.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <a id="stripe-payment" class="in-page-link"></a>
+        <section class="switchable">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-md-6 col-lg-5">
+                <div class="mt--3">
+                  <h1>Pre-Order the Bundle</h1>
                                 <p class="lead">We will share chapters as they're ready.<br><br>Full bundle will be available on Jan 2020.</p>
                                 <hr class="short">
 				<button
@@ -243,13 +245,6 @@
 				>
 				  Checkout
 				</button>
-				<!-- <div id="error-message"></div><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --> -->
-
-                                <!-- <form> -->
-                                <!-- <div class="row"> -->
-                                <!-- <div class="col-12"> <button type="submit" class="btn btn--primary">Buy Now</button> </div> -->
-                                <!-- </div> -->
-                                <!-- </form> -->
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-5"> <img alt="Image" class="border--round box-shadow-wide" src="https://www.math.uni-hamburg.de/home/schreiber/pics/natthree.gif"> </div>
@@ -270,10 +265,6 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
 	<!-- Load Stripe.js on your website. -->
-	<script src="https://js.stripe.com/v3"></script>
-
-	<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-
 	<script>
 	 var stripe = Stripe('pk_live_DW8Hi23RsNIj8JJORA7HTjFl');
 
@@ -302,6 +293,7 @@
 		   });
 	 });
 	</script>
+
     </body>
 
 </html>
